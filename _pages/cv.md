@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* 2011 - 2015    B.S. in Cognitive Science, University of Osnabrück
+* 2015 - 2018    M.S. in Computational Neuroscience, TU Berlin
+* 2018 -    Ph.D in Machine Learning and Neuroscience, TU Munich, present
 
 Work experience
 ======
