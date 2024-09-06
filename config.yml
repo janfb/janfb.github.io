@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://janfb.github.io" 
+title: Jan Boelts (Teusen)
 paginate: 20
 theme: PaperMod
 
@@ -17,6 +17,12 @@ menu:
         - name: Papers
           url: papers/
           weight: 2
+        - name: Software
+          url: software/
+          weight: 3
+        - name: Talks
+          url: talks/
+          weight: 2
         - name: Courses
           url: courses/
           weight: 3
@@ -28,8 +34,10 @@ menu:
           weight: 6
 
 params:
-    description: "I am a Professor of Philology at the Institute of Romance Philology in Regensburg, Germany. My research focuses mostly on Portuguese irregular verbs."
-    author: Moritz-Maria von Igelfeld
+    description: "I am a machine learning researcher and open source developer with a
+      background in computational neuroscience. I am passionate about making recent
+      advances in machine learning research available to researchers and practitioners"
+    author: Jan Boelts
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -43,7 +51,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["books","courses","papers","data","talks"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -52,50 +60,39 @@ params:
     comments: false
     math: true
     profileMode:
-          enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          enabled: true 
+          title: Jan Boelts (Teusen) 
+          subtitle: "I'm a machine learning researcher and open source developer with a
+          background in computational neuroscience. I specialize in probabilistic
+          methods, particularly simulation-based inference (SBI), and develop tools like
+          the [**sbi** Python package](https://sbi-dev.github.io/sbi). I am passionate
+          about making cutting-edge ML research more accessible for practitioners from
+          all domains through high-quality software tools and educational resources." 
+          imageUrl: "profile-pic.png" 
           imageWidth: 160
-          imageHeight: 160
-          imageTitle: Moritz-Maria von Igelfeld
+          imageHeight: 160 
+          imageTitle: Jan Boelts (Teusen) 
           buttons:
             - name: Papers
               url: papers/
+            - name: Software
+              url: software/
+            - name: Talks
+              url: talks/
             - name: Courses
               url: courses/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
             - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+              url: https://transferlab.ai/authors/jan-teusen/
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
         - name: Email
-          url: mailto:moritz.maria.von.igelfeld@gmail.com
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+          url: mailto:jan.boelts@mailbox.org
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.de/citations?user=wsE4N68AAAAJ&hl=en
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@alexandermccallsmithoffici9000
+          url: https://github.com/janfb
         - name: Twitter
-          url: https://twitter.com/McCallSmith
+          url: https://x.com/janfiete
 
     assets:
         disableScrollBarStyle: true
@@ -103,7 +100,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Jan Boelts (Teusen)"
       icon: favicon.ico
       iconHeight: 18
 
