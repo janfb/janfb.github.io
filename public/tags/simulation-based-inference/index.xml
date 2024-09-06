@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>simulation-based inference on Jan Boelts (Teusen)</title>
+    <link>https://janfb.github.io/tags/simulation-based-inference/</link>
+    <description>Recent content in simulation-based inference on Jan Boelts (Teusen)</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/simulation-based-inference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulated Data is All You Need: Bayesian Parameter Inference for Scientific Simulators with SBI</title>
+      <link>https://janfb.github.io/talks/sbi-euroscipy-2024/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/talks/sbi-euroscipy-2024/</guid>
+      <description>A EuroSciPy 2024 talk on using simulation-based inference (SBI) for Bayesian parameter estimation in scientific models, utilizing the sbi library.</description>
+    </item>
+    <item>
+      <title>SBI: Simulation-Based Inference Toolkit</title>
+      <link>https://janfb.github.io/software/sbi/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/software/sbi/</guid>
+      <description>SBI: A Python package for simulation-based inference</description>
+    </item>
+  </channel>
+</rss>

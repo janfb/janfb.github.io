@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>machine learning on Jan Boelts (Teusen)</title>
+    <link>https://janfb.github.io/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Jan Boelts (Teusen)</description>
+    <generator>Hugo -- 0.121.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulation-Based Inference Training</title>
+      <link>https://janfb.github.io/courses/course1/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/course1/</guid>
+      <description>This course covers Simulation-Based Inference, a Bayesian approach for complex models using neural networks for density estimation.</description>
+    </item>
+    <item>
+      <title>Flexible and efficient simulation-based inference for models of decision-making</title>
+      <link>https://janfb.github.io/papers/paper1/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/paper1/</guid>
+      <description>We introduce Mixed Neural Likelihood Estimation (MNLE), a simulation-based inference method for models with both continuous and discrete data, enabling efficient Bayesian inference in decision-making models.</description>
+    </item>
+    <item>
+      <title>SBI: Simulation-Based Inference Toolkit</title>
+      <link>https://janfb.github.io/software/sbi/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/software/sbi/</guid>
+      <description>SBI: A Python package for simulation-based inference</description>
+    </item>
+  </channel>
+</rss>
