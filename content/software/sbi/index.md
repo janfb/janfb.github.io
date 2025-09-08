@@ -6,6 +6,10 @@ tags: ["machine learning", "Bayesian inference", "simulation-based inference", "
 author: ["The sbi-dev team"]
 description: "A Python package for simulation-based inference, designed to meet the needs of both researchers and practitioners" 
 summary: "sbi is a Python package for simulation-based inference, providing a user-friendly interface to perform Bayesian parameter inference for simulator-based models with intractable likelihoods."
+cover:
+    image: "sbi-logo.png"
+    alt: "sbi python package"
+    relative: false
 editPost:
     URL: "https://github.com/sbi-dev/sbi"
     Text: "GitHub Repository"
@@ -13,7 +17,7 @@ disableAnchoredHeadings: false
 showToc: true
 ---
 
-<img src="sbi-logo.png" alt="SBI Software Package" style="width:100px;"/>
+<!-- <img src="sbi-logo.png" alt="SBI Software Package" style="width:100px;"/> -->
 
 ## Overview
 
@@ -49,15 +53,6 @@ posterior = inference.build_posterior()
 samples = posterior.sample((1000,), x=x_o)
 ```
 
-## Available Methods
-
-- **NPE** - Neural Posterior Estimation
-- **NLE** - Neural Likelihood Estimation  
-- **NRE** - Neural Ratio Estimation
-- **FMPE** - Flow Matching Posterior Estimation
-- **MNLE** - Mixed Neural Likelihood Estimation
-- **SNPE, SNLE, SNRE** - Sequential variants
-
 ## Resources
 
 - 📚 [**Documentation**](https://sbi.readthedocs.io/en/latest/)
@@ -69,37 +64,18 @@ samples = posterior.sample((1000,), x=x_o)
 ## Installation
 
 ```bash
-pip install sbi
+uv pip install sbi
 ```
 
 ## Community & Development
 
-sbi is developed and maintained by the **sbi-dev team**, consisting of [over 70 contributors](https://github.com/sbi-dev/sbi/graphs/contributors) from around the world. The package is a NumFOCUS affiliated project with an active community, regular hackathons, and continuous development.
+sbi is developed and maintained by the **sbi-dev team**, consisting of [over 80 contributors](https://github.com/sbi-dev/sbi/graphs/contributors) from around the world. The package is a NumFOCUS affiliated project with an active community, regular hackathons, and continuous development.
 
 ### Get Involved
 
 - 🐛 [Report issues](https://github.com/sbi-dev/sbi/issues)
 - 🎯 [Contribute code](https://github.com/sbi-dev/sbi/blob/main/CONTRIBUTING.md)
 - 💬 [Join discussions](https://github.com/sbi-dev/sbi/discussions)
-- 📧 [Mailing list](https://sbi-dev.github.io/sbi/community/)
-
-## Citation
-
-If you use sbi in your research, please cite:
-
-```bibtex
-@article{tejero2020sbi,
-  title={sbi: A toolkit for simulation-based inference},
-  author={Tejero-Cantero*, Álvaro and Boelts*, Jan and Deistler*, Michael and 
-          Lueckmann*, Jan-Matthis and Durkan*, Conor and Gonçalves, Pedro J and 
-          Greenberg, David S and Macke, Jakob H},
-  journal={Journal of Open Source Software},
-  volume={5},
-  number={52},
-  pages={2505},
-  year={2020}
-}
-```
 
 ---
 

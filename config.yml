@@ -55,7 +55,7 @@ params:
     profileMode:
           enabled: true 
           title: Jan Teusen (né Boelts) 
-          subtitle: "Senior AI Researcher at [TransferLab](https://transferlab.ai/authors/jan-teusen/) • Lead developer of the [**sbi** Python package](https://sbi-dev.github.io/sbi) • Making advanced ML methods accessible through open-source tools and education • Specializing in simulation-based inference and probabilistic machine learning" 
+          subtitle: "Senior AI Researcher at [**TransferLab**](https://transferlab.ai/authors/jan-teusen/) • Lead developer of the [**sbi** Python package](https://sbi-dev.github.io/sbi) • Making advanced ML methods accessible through open-source tools and education • Specializing in simulation-based inference and probabilistic machine learning" 
           imageUrl: "profile-pic.png" 
           imageWidth: 160
           imageHeight: 160 
