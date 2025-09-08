@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>neural networks on Jan Boelts (Teusen)</title>
+    <title>Neural Networks on Jan Teusen (né Boelts)</title>
     <link>https://janfb.github.io/tags/neural-networks/</link>
-    <description>Recent content in neural networks on Jan Boelts (Teusen)</description>
-    <generator>Hugo -- 0.121.1</generator>
+    <description>Recent content in Neural Networks on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://janfb.github.io/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
@@ -16,11 +16,25 @@
       <description>A EuroSciPy 2024 talk on using simulation-based inference (SBI) for Bayesian parameter estimation in scientific models, utilizing the sbi library.</description>
     </item>
     <item>
+      <title>Simulation-based inference: an introduction for applied mathematicians</title>
+      <link>https://janfb.github.io/papers/sbi-tutorial-2024/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-tutorial-2024/</guid>
+      <description>A comprehensive tutorial introduction to simulation-based inference methods for applied mathematicians and practitioners</description>
+    </item>
+    <item>
       <title>Simulation-Based Inference Training</title>
       <link>https://janfb.github.io/courses/course1/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://janfb.github.io/courses/course1/</guid>
       <description>This course covers Simulation-Based Inference, a Bayesian approach for complex models using neural networks for density estimation.</description>
+    </item>
+    <item>
+      <title>GATSBI: Generative Adversarial Training for Simulation-Based Inference</title>
+      <link>https://janfb.github.io/papers/gatsbi-2022/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/gatsbi-2022/</guid>
+      <description>A new approach to simulation-based inference using generative adversarial networks for improved sample efficiency</description>
     </item>
   </channel>
 </rss>

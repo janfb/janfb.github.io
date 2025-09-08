@@ -1,6 +1,7 @@
 baseURL: "https://janfb.github.io" 
-title: Jan Boelts (Teusen)
-paginate: 20
+title: Jan Teusen (né Boelts)
+pagination:
+  pagerSize: 20
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -11,33 +12,25 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: books/
-          weight: 5 
         - name: Papers
           url: papers/
-          weight: 2
+          weight: 1
         - name: Software
           url: software/
-          weight: 3
+          weight: 2
         - name: Talks
           url: talks/
-          weight: 2
-        - name: Courses
-          url: courses/
           weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
+        - name: Teaching
+          url: courses/
+          weight: 4
         - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+          url: https://transferlab.ai/authors/jan-teusen/
+          weight: 5
 
 params:
-    description: "I am a machine learning researcher and open source developer with a
-      background in computational neuroscience. I am passionate about making recent
-      advances in machine learning research available to researchers and practitioners"
-    author: Jan Boelts
+    description: "Machine learning researcher at TransferLab specializing in simulation-based inference and probabilistic methods. Lead developer of the sbi Python package."
+    author: Jan Teusen (né Boelts)
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -51,7 +44,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data","talks"]
+    MainSections: ["papers","software","talks","courses"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -61,13 +54,8 @@ params:
     math: true
     profileMode:
           enabled: true 
-          title: Jan Boelts (Teusen) 
-          subtitle: "I'm a machine learning researcher and open source developer with a
-          background in computational neuroscience. I specialize in probabilistic
-          methods, particularly simulation-based inference (SBI), and develop tools like
-          the [**sbi** Python package](https://sbi-dev.github.io/sbi). I am passionate
-          about making cutting-edge ML research more accessible for practitioners from
-          all domains through high-quality software tools and educational resources." 
+          title: Jan Teusen (né Boelts) 
+          subtitle: "Senior AI Researcher at [TransferLab](https://transferlab.ai/authors/jan-teusen/) • Lead developer of the [**sbi** Python package](https://sbi-dev.github.io/sbi) • Making advanced ML methods accessible through open-source tools and education • Specializing in simulation-based inference and probabilistic machine learning" 
           imageUrl: "profile-pic.png" 
           imageWidth: 160
           imageHeight: 160 
@@ -79,18 +67,20 @@ params:
               url: software/
             - name: Talks
               url: talks/
-            - name: Courses
+            - name: Teaching
               url: courses/
             - name: Blog
               url: https://transferlab.ai/authors/jan-teusen/
 
     socialIcons:
         - name: Email
-          url: mailto:jan.boelts@mailbox.org
+          url: mailto:jan.teusen@mailbox.org
         - name: Google Scholar
           url: https://scholar.google.de/citations?user=wsE4N68AAAAJ&hl=en
         - name: GitHub
           url: https://github.com/janfb
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/jan-teusen-n%C3%A9-b%C3%B6lts-202172233/
         - name: Twitter
           url: https://x.com/janfiete
 

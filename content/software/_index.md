@@ -1,4 +1,4 @@
 ---
 title: "Software"
-description: "Software packages."
+description: "Open-source tools for making machine learning research accessible to practitioners"
 ---

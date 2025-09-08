@@ -1,4 +1,4 @@
 ---
 title: "Papers"
-description: "Preprints and articles by Professor Dr von Igelfeld."
+description: "Publications on simulation-based inference, machine learning, and computational neuroscience"
 ---
