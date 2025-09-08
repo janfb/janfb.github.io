@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TransferLab on Jan Teusen (né Boelts)</title>
+    <link>https://janfb.github.io/tags/transferlab/</link>
+    <description>Recent content in TransferLab on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/transferlab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mind the Gap: Methods and Applicability of Simulation-Based Inference</title>
+      <link>https://janfb.github.io/talks/transferlab-2024/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/talks/transferlab-2024/</guid>
+      <description>Research talk on bridging the gap between SBI methods and practical applications</description>
+    </item>
+  </channel>
+</rss>

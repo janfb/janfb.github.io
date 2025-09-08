@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Dissecting origins of wiring specificity in dense cortical connectomes | Jan Teusen (né Boelts)</title>
+<meta name="keywords" content="neuroscience, connectomics, cortical circuits, simulation-based inference">
+<meta name="description" content="Analyzing the origins of synaptic specificity in dense reconstructions of cortical circuits">
+<meta name="author" content="Philipp Harth,&thinsp;Daniel Udvary,&thinsp;Jan Boelts,&thinsp;Daniel Baum,&thinsp;Jakob H. Macke,&thinsp;Hans-Christian Hege,&thinsp;Marcel Oberlaender">
+<link rel="canonical" href="https://janfb.github.io/papers/connectomes-2024/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://janfb.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://janfb.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://janfb.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://janfb.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://janfb.github.io/papers/connectomes-2024/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Dissecting origins of wiring specificity in dense cortical connectomes" />
+<meta property="og:description" content="Analyzing the origins of synaptic specificity in dense reconstructions of cortical circuits" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://janfb.github.io/papers/connectomes-2024/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2024-12-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-12-14T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dissecting origins of wiring specificity in dense cortical connectomes"/>
+<meta name="twitter:description" content="Analyzing the origins of synaptic specificity in dense reconstructions of cortical circuits"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://janfb.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Dissecting origins of wiring specificity in dense cortical connectomes",
+      "item": "https://janfb.github.io/papers/connectomes-2024/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dissecting origins of wiring specificity in dense cortical connectomes",
+  "name": "Dissecting origins of wiring specificity in dense cortical connectomes",
+  "description": "Analyzing the origins of synaptic specificity in dense reconstructions of cortical circuits",
+  "keywords": [
+    "neuroscience", "connectomics", "cortical circuits", "simulation-based inference"
+  ],
+  "articleBody": " Download Preprint Abstract The organization of synaptic connections between neurons shapes the computations performed by cortical circuits. Understanding the principles governing this organization requires dissecting the contributions of different factors to synaptic specificity. Here, we analyze dense electron microscopy reconstructions of cortical tissue to identify the origins of wiring specificity. We develop a computational framework that separates the contributions of neuronal morphology, spatial proximity, and cell-type-specific connectivity rules to the observed connectivity patterns. Our analysis reveals that while spatial proximity and morphological constraints explain a substantial fraction of connectivity, cell-type-specific rules add critical specificity that cannot be explained by geometry alone. We identify systematic deviations from random connectivity that vary across cell types and cortical layers, suggesting functionally specialized wiring motifs. These findings provide insights into how evolution and development shape cortical circuits to support computation, and offer constraints for biologically realistic models of cortical networks.\nCitation @article{harth2024dissecting, title={Dissecting origins of wiring specificity in dense cortical connectomes}, author={Harth, Philipp and Udvary, Daniel and Boelts, Jan and Baum, Daniel and Macke, Jakob H and Hege, Hans-Christian and Oberlaender, Marcel}, journal={bioRxiv}, year={2024}, publisher={Cold Spring Harbor Laboratory} } ",
+  "wordCount" : "185",
+  "inLanguage": "en",
+  "datePublished": "2024-12-14T00:00:00Z",
+  "dateModified": "2024-12-14T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Philipp Harth"
+  }, {
+    "@type": "Person",
+    "name": "Daniel Udvary"
+  }, {
+    "@type": "Person",
+    "name": "Jan Boelts"
+  }, {
+    "@type": "Person",
+    "name": "Daniel Baum"
+  }, {
+    "@type": "Person",
+    "name": "Jakob H. Macke"
+  }, {
+    "@type": "Person",
+    "name": "Hans-Christian Hege"
+  }, {
+    "@type": "Person",
+    "name": "Marcel Oberlaender"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://janfb.github.io/papers/connectomes-2024/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jan Teusen (né Boelts)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://janfb.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://janfb.github.io/" accesskey="h" title="Jan Boelts (Teusen)">
+                <img src="https://janfb.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Jan Boelts (Teusen)</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://janfb.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/talks/" title="Talks">
+                    <span>Talks</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/courses/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://transferlab.ai/authors/jan-teusen/" title="Blog">
+                    <span>Blog</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Dissecting origins of wiring specificity in dense cortical connectomes
+    </h1>
+    <div class="post-meta"><span title='2024-12-14 00:00:00 +0000 UTC'>December 2024</span>&nbsp;&middot;&nbsp;Philipp Harth,&thinsp;Daniel Udvary,&thinsp;Jan Boelts,&thinsp;Daniel Baum,&thinsp;Jakob H. Macke,&thinsp;Hans-Christian Hege,&thinsp;Marcel Oberlaender&nbsp;&middot;&nbsp;<a href="https://www.biorxiv.org/content/10.1101/2024.12.14.628490v1" rel="noopener noreferrer" target="_blank">bioRxiv</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://www.biorxiv.org/content/10.1101/2024.12.14.628490v1.full.pdf" target="_blank">Preprint</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>The organization of synaptic connections between neurons shapes the computations performed by cortical circuits. Understanding the principles governing this organization requires dissecting the contributions of different factors to synaptic specificity. Here, we analyze dense electron microscopy reconstructions of cortical tissue to identify the origins of wiring specificity. We develop a computational framework that separates the contributions of neuronal morphology, spatial proximity, and cell-type-specific connectivity rules to the observed connectivity patterns. Our analysis reveals that while spatial proximity and morphological constraints explain a substantial fraction of connectivity, cell-type-specific rules add critical specificity that cannot be explained by geometry alone. We identify systematic deviations from random connectivity that vary across cell types and cortical layers, suggesting functionally specialized wiring motifs. These findings provide insights into how evolution and development shape cortical circuits to support computation, and offer constraints for biologically realistic models of cortical networks.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@article</span>{harth2024dissecting,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Dissecting origins of wiring specificity in dense cortical connectomes}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Harth, Philipp and Udvary, Daniel and Boelts, Jan and Baum, Daniel and Macke, Jakob H and Hege, Hans-Christian and Oberlaender, Marcel}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">journal</span>=<span style="color:#a50">{bioRxiv}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span>=<span style="color:#a50">{2024}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">publisher</span>=<span style="color:#a50">{Cold Spring Harbor Laboratory}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://janfb.github.io/tags/neuroscience/">Neuroscience</a></li>
+      <li><a href="https://janfb.github.io/tags/connectomics/">Connectomics</a></li>
+      <li><a href="https://janfb.github.io/tags/cortical-circuits/">Cortical Circuits</a></li>
+      <li><a href="https://janfb.github.io/tags/simulation-based-inference/">Simulation-Based Inference</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://janfb.github.io/">Jan Teusen (né Boelts)</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

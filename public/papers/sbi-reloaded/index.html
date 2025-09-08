@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>sbi reloaded: A toolkit for simulation-based inference workflows | Jan Teusen (né Boelts)</title>
+<meta name="keywords" content="machine learning, simulation-based inference, sbi, probabilistic modeling, open source, Python, software">
+<meta name="description" content="A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference">
+<meta name="author" content="Jan Boelts*,&thinsp;Michael Deistler*,&thinsp;Manuel Gloeckler,&thinsp;Álvaro Tejero-Cantero,&thinsp;Jan-Matthis Lueckmann,&thinsp;Guy Moss,&thinsp;Peter Steinbach,&thinsp;Thomas Moreau,&thinsp;Fabio Muratore,&thinsp;Julia Linhart,&thinsp;Conor Durkan,&thinsp;Julius Vetter,&thinsp;Benjamin Kurt Miller,&thinsp;Maternus Herold,&thinsp;Abolfazl Ziaeemehr,&thinsp;Matthijs Pals,&thinsp;Theo Gruner,&thinsp;Sebastian Bischoff,&thinsp;Nastya Krouglova,&thinsp;Richard Gao,&thinsp;Janne K. Lappalainen,&thinsp;Bálint Mucsányi,&thinsp;Felix Pei,&thinsp;Auguste Schulz,&thinsp;Zinovia Stefanidi,&thinsp;Pedro Rodrigues,&thinsp;Cornelius Schröder,&thinsp;Faried Abu Zaid,&thinsp;Jonas Beck,&thinsp;Jaivardhan Kapoor,&thinsp;David S. Greenberg,&thinsp;Pedro J. Gonçalves,&thinsp;Jakob H. Macke">
+<link rel="canonical" href="https://janfb.github.io/papers/sbi-reloaded/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://janfb.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://janfb.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://janfb.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://janfb.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://janfb.github.io/papers/sbi-reloaded/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="sbi reloaded: A toolkit for simulation-based inference workflows" />
+<meta property="og:description" content="A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://janfb.github.io/papers/sbi-reloaded/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2025-04-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-04-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="sbi reloaded: A toolkit for simulation-based inference workflows"/>
+<meta name="twitter:description" content="A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://janfb.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "sbi reloaded: A toolkit for simulation-based inference workflows",
+      "item": "https://janfb.github.io/papers/sbi-reloaded/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "sbi reloaded: A toolkit for simulation-based inference workflows",
+  "name": "sbi reloaded: A toolkit for simulation-based inference workflows",
+  "description": "A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference",
+  "keywords": [
+    "machine learning", "simulation-based inference", "sbi", "probabilistic modeling", "open source", "Python", "software"
+  ],
+  "articleBody": " Download Paper Code Documentation Abstract The sbi package provides a unified Python interface for simulation-based inference (SBI) algorithms, enabling researchers to perform Bayesian inference on models with intractable likelihoods across diverse scientific domains. This paper presents sbi reloaded, a comprehensive update that has evolved through extensive community contributions and user feedback. The package now includes multiple state-of-the-art inference algorithms (NPE, NLE, NRE, FMPE, MNLE, and more), enhanced diagnostics and validation tools, improved computational efficiency, and a flexible API supporting custom neural network architectures and proposal distributions. Key improvements include GPU acceleration, distributed training support, comprehensive testing infrastructure, and extensive documentation with tutorials. The package has enabled scientific discoveries across neuroscience, cosmology, epidemiology, and other fields by making powerful inference methods accessible to domain scientists. With over 30 contributors and a growing user base, sbi has become the standard toolkit for neural simulation-based inference, balancing ease of use with the flexibility needed for cutting-edge research.\nCitation @article{boelts2025sbi, title = {sbi reloaded: A toolkit for simulation-based inference workflows}, author = {Boelts*, Jan and Deistler*, Michael and Gloeckler, Manuel and Tejero-Cantero, {\\'A}lvaro and Lueckmann, Jan-Matthis and Moss, Guy and Steinbach, Peter and Moreau, Thomas and Muratore, Fabio and Linhart, Julia and Durkan, Conor and Vetter, Julius and Miller, Benjamin Kurt and Herold, Maternus and Ziaeemehr, Abolfazl and Pals, Matthijs and Gruner, Theo and Bischoff, Sebastian and Krouglova, Nastya and Gao, Richard and Lappalainen, Janne K. and Mucs{\\'a}nyi, B{\\'a}lint and Pei, Felix and Schulz, Auguste and Stefanidi, Zinovia and Rodrigues, Pedro and Schr{\\\"o}der, Cornelius and Zaid, Faried Abu and Beck, Jonas and Kapoor, Jaivardhan and Greenberg, David S. and Gon{\\c c}alves, Pedro J. and Macke, Jakob H.}, year = {2025}, month = apr, journal = {Journal of Open Source Software}, volume = {10}, number = {108}, pages = {7754}, issn = {2475-9066}, doi = {10.21105/joss.07754} } ",
+  "wordCount" : "302",
+  "inLanguage": "en",
+  "datePublished": "2025-04-01T00:00:00Z",
+  "dateModified": "2025-04-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jan Boelts*"
+  }, {
+    "@type": "Person",
+    "name": "Michael Deistler*"
+  }, {
+    "@type": "Person",
+    "name": "Manuel Gloeckler"
+  }, {
+    "@type": "Person",
+    "name": "Álvaro Tejero-Cantero"
+  }, {
+    "@type": "Person",
+    "name": "Jan-Matthis Lueckmann"
+  }, {
+    "@type": "Person",
+    "name": "Guy Moss"
+  }, {
+    "@type": "Person",
+    "name": "Peter Steinbach"
+  }, {
+    "@type": "Person",
+    "name": "Thomas Moreau"
+  }, {
+    "@type": "Person",
+    "name": "Fabio Muratore"
+  }, {
+    "@type": "Person",
+    "name": "Julia Linhart"
+  }, {
+    "@type": "Person",
+    "name": "Conor Durkan"
+  }, {
+    "@type": "Person",
+    "name": "Julius Vetter"
+  }, {
+    "@type": "Person",
+    "name": "Benjamin Kurt Miller"
+  }, {
+    "@type": "Person",
+    "name": "Maternus Herold"
+  }, {
+    "@type": "Person",
+    "name": "Abolfazl Ziaeemehr"
+  }, {
+    "@type": "Person",
+    "name": "Matthijs Pals"
+  }, {
+    "@type": "Person",
+    "name": "Theo Gruner"
+  }, {
+    "@type": "Person",
+    "name": "Sebastian Bischoff"
+  }, {
+    "@type": "Person",
+    "name": "Nastya Krouglova"
+  }, {
+    "@type": "Person",
+    "name": "Richard Gao"
+  }, {
+    "@type": "Person",
+    "name": "Janne K. Lappalainen"
+  }, {
+    "@type": "Person",
+    "name": "Bálint Mucsányi"
+  }, {
+    "@type": "Person",
+    "name": "Felix Pei"
+  }, {
+    "@type": "Person",
+    "name": "Auguste Schulz"
+  }, {
+    "@type": "Person",
+    "name": "Zinovia Stefanidi"
+  }, {
+    "@type": "Person",
+    "name": "Pedro Rodrigues"
+  }, {
+    "@type": "Person",
+    "name": "Cornelius Schröder"
+  }, {
+    "@type": "Person",
+    "name": "Faried Abu Zaid"
+  }, {
+    "@type": "Person",
+    "name": "Jonas Beck"
+  }, {
+    "@type": "Person",
+    "name": "Jaivardhan Kapoor"
+  }, {
+    "@type": "Person",
+    "name": "David S. Greenberg"
+  }, {
+    "@type": "Person",
+    "name": "Pedro J. Gonçalves"
+  }, {
+    "@type": "Person",
+    "name": "Jakob H. Macke"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://janfb.github.io/papers/sbi-reloaded/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jan Teusen (né Boelts)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://janfb.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://janfb.github.io/" accesskey="h" title="Jan Boelts (Teusen)">
+                <img src="https://janfb.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Jan Boelts (Teusen)</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://janfb.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/talks/" title="Talks">
+                    <span>Talks</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/courses/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://transferlab.ai/authors/jan-teusen/" title="Blog">
+                    <span>Blog</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      sbi reloaded: A toolkit for simulation-based inference workflows
+    </h1>
+    <div class="post-meta"><span title='2025-04-01 00:00:00 +0000 UTC'>April 2025</span>&nbsp;&middot;&nbsp;Jan Boelts*,&thinsp;Michael Deistler*,&thinsp;Manuel Gloeckler,&thinsp;Álvaro Tejero-Cantero,&thinsp;Jan-Matthis Lueckmann,&thinsp;Guy Moss,&thinsp;Peter Steinbach,&thinsp;Thomas Moreau,&thinsp;Fabio Muratore,&thinsp;Julia Linhart,&thinsp;Conor Durkan,&thinsp;Julius Vetter,&thinsp;Benjamin Kurt Miller,&thinsp;Maternus Herold,&thinsp;Abolfazl Ziaeemehr,&thinsp;Matthijs Pals,&thinsp;Theo Gruner,&thinsp;Sebastian Bischoff,&thinsp;Nastya Krouglova,&thinsp;Richard Gao,&thinsp;Janne K. Lappalainen,&thinsp;Bálint Mucsányi,&thinsp;Felix Pei,&thinsp;Auguste Schulz,&thinsp;Zinovia Stefanidi,&thinsp;Pedro Rodrigues,&thinsp;Cornelius Schröder,&thinsp;Faried Abu Zaid,&thinsp;Jonas Beck,&thinsp;Jaivardhan Kapoor,&thinsp;David S. Greenberg,&thinsp;Pedro J. Gonçalves,&thinsp;Jakob H. Macke&nbsp;&middot;&nbsp;<a href="https://joss.theoj.org/papers/10.21105/joss.07754" rel="noopener noreferrer" target="_blank">Journal of Open Source Software</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://joss.theoj.org/papers/10.21105/joss.07754.pdf" target="_blank">Paper</a>
+</li>
+<li><a href="https://github.com/sbi-dev/sbi" target="_blank">Code</a>
+</li>
+<li><a href="https://sbi-dev.github.io/sbi/" target="_blank">Documentation</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>The sbi package provides a unified Python interface for simulation-based inference (SBI) algorithms, enabling researchers to perform Bayesian inference on models with intractable likelihoods across diverse scientific domains. This paper presents sbi reloaded, a comprehensive update that has evolved through extensive community contributions and user feedback. The package now includes multiple state-of-the-art inference algorithms (NPE, NLE, NRE, FMPE, MNLE, and more), enhanced diagnostics and validation tools, improved computational efficiency, and a flexible API supporting custom neural network architectures and proposal distributions. Key improvements include GPU acceleration, distributed training support, comprehensive testing infrastructure, and extensive documentation with tutorials. The package has enabled scientific discoveries across neuroscience, cosmology, epidemiology, and other fields by making powerful inference methods accessible to domain scientists. With over 30 contributors and a growing user base, sbi has become the standard toolkit for neural simulation-based inference, balancing ease of use with the flexibility needed for cutting-edge research.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@article</span>{boelts2025sbi,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span> = <span style="color:#a50">{sbi reloaded: A toolkit for simulation-based inference workflows}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span> = <span style="color:#a50">{Boelts*, Jan and Deistler*, Michael and Gloeckler, Manuel and Tejero-Cantero, {\&#39;A}lvaro and Lueckmann, Jan-Matthis and Moss, Guy and Steinbach, Peter and Moreau, Thomas and Muratore, Fabio and Linhart, Julia and Durkan, Conor and Vetter, Julius and Miller, Benjamin Kurt and Herold, Maternus and Ziaeemehr, Abolfazl and Pals, Matthijs and Gruner, Theo and Bischoff, Sebastian and Krouglova, Nastya and Gao, Richard and Lappalainen, Janne K. and Mucs{\&#39;a}nyi, B{\&#39;a}lint and Pei, Felix and Schulz, Auguste and Stefanidi, Zinovia and Rodrigues, Pedro and Schr{\&#34;o}der, Cornelius and Zaid, Faried Abu and Beck, Jonas and Kapoor, Jaivardhan and Greenberg, David S. and Gon{\c c}alves, Pedro J. and Macke, Jakob H.}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span> = <span style="color:#a50">{2025}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">month</span> = <span style="color:#a00">apr</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">journal</span> = <span style="color:#a50">{Journal of Open Source Software}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">volume</span> = <span style="color:#a50">{10}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">number</span> = <span style="color:#a50">{108}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">pages</span> = <span style="color:#a50">{7754}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">issn</span> = <span style="color:#a50">{2475-9066}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">doi</span> = <span style="color:#a50">{10.21105/joss.07754}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://janfb.github.io/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="https://janfb.github.io/tags/simulation-based-inference/">Simulation-Based Inference</a></li>
+      <li><a href="https://janfb.github.io/tags/sbi/">SBI</a></li>
+      <li><a href="https://janfb.github.io/tags/probabilistic-modeling/">Probabilistic Modeling</a></li>
+      <li><a href="https://janfb.github.io/tags/open-source/">Open Source</a></li>
+      <li><a href="https://janfb.github.io/tags/python/">Python</a></li>
+      <li><a href="https://janfb.github.io/tags/software/">Software</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://janfb.github.io/">Jan Teusen (né Boelts)</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

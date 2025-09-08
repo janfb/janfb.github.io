@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ICLR on Jan Teusen (né Boelts)</title>
+    <link>https://janfb.github.io/tags/iclr/</link>
+    <description>Recent content in ICLR on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/iclr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GATSBI: Generative Adversarial Training for Simulation-Based Inference</title>
+      <link>https://janfb.github.io/papers/gatsbi-2022/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/gatsbi-2022/</guid>
+      <description>A new approach to simulation-based inference using generative adversarial networks for improved sample efficiency</description>
+    </item>
+  </channel>
+</rss>

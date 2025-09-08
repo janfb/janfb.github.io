@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on Jan Teusen (né Boelts)</title>
+    <link>https://janfb.github.io/tags/python/</link>
+    <description>Recent content in Python on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi</title>
+      <link>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</guid>
+      <description>Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators</description>
+    </item>
+    <item>
+      <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
+      <link>https://janfb.github.io/papers/sbi-reloaded/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
+      <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
+    </item>
+    <item>
+      <title>sbi: A toolkit for simulation-based inference</title>
+      <link>https://janfb.github.io/papers/sbi-joss-2020/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-joss-2020/</guid>
+      <description>The original sbi package paper introducing a unified Python toolkit for simulation-based inference</description>
+    </item>
+    <item>
+      <title>sbi: Simulation-Based Inference</title>
+      <link>https://janfb.github.io/software/sbi/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/software/sbi/</guid>
+      <description>A Python package for simulation-based inference, designed to meet the needs of both researchers and practitioners</description>
+    </item>
+    <item>
+      <title>List of Irregular Verbs Across Romance Languages</title>
+      <link>https://janfb.github.io/data/data1/</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/data/data1/</guid>
+      <description>This dataset contains all irregular verbs in known Romance languages.</description>
+    </item>
+  </channel>
+</rss>

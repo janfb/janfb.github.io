@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Papers on Jan Teusen (né Boelts)</title>
+    <link>https://janfb.github.io/papers/</link>
+    <description>Recent content in Papers on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulation-Based Inference: A Practical Guide</title>
+      <link>https://janfb.github.io/papers/sbi-tutorial-2025/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-tutorial-2025/</guid>
+      <description>A practical guide for practitioners aiming to apply simulation-based inference methods for scientific discovery</description>
+    </item>
+    <item>
+      <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
+      <link>https://janfb.github.io/papers/sbi-reloaded/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
+      <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
+    </item>
+    <item>
+      <title>Dissecting origins of wiring specificity in dense cortical connectomes</title>
+      <link>https://janfb.github.io/papers/connectomes-2024/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/connectomes-2024/</guid>
+      <description>Analyzing the origins of synaptic specificity in dense reconstructions of cortical circuits</description>
+    </item>
+    <item>
+      <title>Simulation-based inference for efficient identification of generative models in connectomics</title>
+      <link>https://janfb.github.io/papers/connectomics-2023/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/connectomics-2023/</guid>
+      <description>Using simulation-based inference to identify synaptic connectivity rules in anatomically realistic cortical connectomes</description>
+    </item>
+    <item>
+      <title>Flexible and efficient simulation-based inference for models of decision-making</title>
+      <link>https://janfb.github.io/papers/flexible-ddm-2022/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/flexible-ddm-2022/</guid>
+      <description>We introduce Mixed Neural Likelihood Estimation (MNLE), a simulation-based inference method for models with both continuous and discrete data, enabling efficient Bayesian inference in decision-making models.</description>
+    </item>
+    <item>
+      <title>GATSBI: Generative Adversarial Training for Simulation-Based Inference</title>
+      <link>https://janfb.github.io/papers/gatsbi-2022/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/gatsbi-2022/</guid>
+      <description>A new approach to simulation-based inference using generative adversarial networks for improved sample efficiency</description>
+    </item>
+    <item>
+      <title>Benchmarking Simulation-Based Inference</title>
+      <link>https://janfb.github.io/papers/benchmarking-2021/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/benchmarking-2021/</guid>
+      <description>A comprehensive benchmark suite for evaluating simulation-based inference methods across diverse tasks</description>
+    </item>
+    <item>
+      <title>sbi: A toolkit for simulation-based inference</title>
+      <link>https://janfb.github.io/papers/sbi-joss-2020/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-joss-2020/</guid>
+      <description>The original sbi package paper introducing a unified Python toolkit for simulation-based inference</description>
+    </item>
+  </channel>
+</rss>

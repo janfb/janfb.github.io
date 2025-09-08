@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi | Jan Teusen (né Boelts)</title>
+<meta name="keywords" content="simulation-based inference, sbi, Bayesian inference, tutorial, EuroSciPy, machine learning, Python, parameter estimation, uncertainty quantification">
+<meta name="description" content="Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators">
+<meta name="author" content="Jan Teusen">
+<link rel="canonical" href="https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://janfb.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://janfb.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://janfb.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://janfb.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi" />
+<meta property="og:description" content="Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/" />
+<meta property="og:image" content="https://janfb.github.io/logo.png" /><meta property="article:section" content="courses" />
+<meta property="article:published_time" content="2025-08-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-08-19T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://janfb.github.io/logo.png" />
+<meta name="twitter:title" content="Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi"/>
+<meta name="twitter:description" content="Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Teaching",
+      "item": "https://janfb.github.io/courses/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi",
+      "item": "https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi",
+  "name": "Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi",
+  "description": "Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators",
+  "keywords": [
+    "simulation-based inference", "sbi", "Bayesian inference", "tutorial", "EuroSciPy", "machine learning", "Python", "parameter estimation", "uncertainty quantification"
+  ],
+  "articleBody": "Tutorial Overview When: August 19, 2025, 15:30–17:00\nWhere: EuroSciPy 2025, Room 1.38 (Ground Floor)\nDuration: 1.5 hours\nLevel: Intermediate\nMaterials: GitHub Repository Description Do you spend time tuning parameters for complex scientific simulators? Perhaps you use grid search or optimization to match parameters to data. These find a best-fit set, but often don’t reveal your confidence or if other parameters also fit. This uncertainty is crucial for reliable conclusions.\nThis tutorial introduces Simulation-Based Inference (SBI), a modern technique tackling this challenge. Unlike traditional Bayesian inference methods (like MCMC) that require mathematical likelihood functions, SBI works directly with your simulator’s outputs. Using recent advances in probabilistic ML, it estimates the probability distribution of parameter values consistent with your observations, even for complex “black-box” simulators. It provides not just a single best guess, but full parameter distributions representing parameter uncertainties and potential interactions.\nWhat You’ll Learn In this hands-on tutorial using the sbi Python package, you’ll learn the practical steps:\nSetting up the problem - Defining parameter ranges and checking model plausibility Running SBI for parameter distributions - Applying different SBI techniques Checking result reliability - Validating your inference results Interpreting results - Drawing scientific conclusions from SBI outputs We cover different SBI techniques and how to apply them to real-world problems.\nTutorial Content The SBI Workflow The tutorial provides a comprehensive, practical introduction to SBI using the sbi Python package. We guide you through the entire practical workflow:\nA-priori checks: Defining parameter ranges of interest and running initial simulations to check if the model can plausibly generate data similar to observations Choosing and applying SBI methods: Learning about different SBI strategies (like those that directly estimate parameter probabilities, approximate likelihoods, or work with probability ratios) and selecting one suitable for your specific problem A-posteriori checks: Evaluating how accurately the underlying machine learning models have learned to infer parameters Interpretation: Understanding and drawing scientific conclusions from SBI results Why SBI? Traditional methods like grid search or numerical optimization algorithms can find a single ‘best’ set of parameters. However, they often struggle when there are many parameters, and more importantly, they usually don’t quantify the uncertainty associated with the result.\nSBI methods learn a statistical relationship directly from running your simulator multiple times with different inputs. Their key advantage is the ability to estimate the range of parameter values (and their probabilities) that are consistent with your observed data, providing a measure of uncertainty. This works even for complex ‘black-box’ simulators where the internal equations might be unknown or intractable.\nTarget Audience This tutorial is aimed at:\nScientists and engineers using Python for simulations Researchers working with computational models who need to estimate parameters from data Practitioners looking for methods to quantify parameter uncertainty in complex systems Anyone interested in probabilistic inference methods Prerequisites Proficiency in Python programming No prior knowledge of Bayesian statistics is required Basic understanding of scientific computing helpful but not essential Learning Objectives Upon completion, participants will be able to:\nUnderstand the concept of Simulation-Based Inference (SBI) and its advantages for parameter estimation in complex simulators Apply the sbi Python package to estimate parameter ranges and uncertainty from simulation outputs Become familiar with common neural network-based SBI techniques and their use cases Evaluate the results of an SBI analysis to ensure reliability Perform the complete SBI workflow using the sbi package on their own problems About the sbi Package The sbi package implements state-of-the-art SBI algorithms, often using neural networks, and is actively developed by a large community. It’s a NumFOCUS affiliated project with over 70 contributors and yearly collaborative hackathons. The package provides a unified interface for various SBI methods, making these powerful techniques accessible to domain scientists.\nPractical Applications The tutorial includes examples from various fields:\nEpidemiology: Modeling disease spread with uncertainty quantification Neuroscience: Inferring neural circuit parameters from recordings Physics: Parameter estimation in particle physics simulations Engineering: Calibrating complex engineering models Materials and Resources 📚 Tutorial Materials 📦 sbi Package Documentation 📄 SBI Practical Guide Paper 🎥 EuroSciPy 2025 Session This tutorial equips participants with the practical skills to effectively use the sbi package for more reliable parameter estimation and uncertainty quantification in their simulation-based models.\n",
+  "wordCount" : "690",
+  "inLanguage": "en",
+  "image":"https://janfb.github.io/logo.png","datePublished": "2025-08-19T00:00:00Z",
+  "dateModified": "2025-08-19T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jan Teusen"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jan Teusen (né Boelts)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://janfb.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://janfb.github.io/" accesskey="h" title="Jan Boelts (Teusen)">
+                <img src="https://janfb.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Jan Boelts (Teusen)</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://janfb.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/talks/" title="Talks">
+                    <span>Talks</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/courses/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://transferlab.ai/authors/jan-teusen/" title="Blog">
+                    <span>Blog</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi
+    </h1>
+    <div class="post-meta"><span title='2025-08-19 00:00:00 +0000 UTC'>August 2025</span>&nbsp;&middot;&nbsp;Jan Teusen&nbsp;&middot;&nbsp;<a href="https://pretalx.com/euroscipy-2025/talk/MU9HAJ/" rel="noopener noreferrer" target="_blank">EuroSciPy 2025</a>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="tutorial-overview">Tutorial Overview</h2>
+<p><strong>When:</strong> August 19, 2025, 15:30–17:00<br>
+<strong>Where:</strong> EuroSciPy 2025, Room 1.38 (Ground Floor)<br>
+<strong>Duration:</strong> 1.5 hours<br>
+<strong>Level:</strong> Intermediate<br>
+<strong>Materials:</strong> <a href="https://github.com/janfb/euroscipy-2025-sbi-tutorial" target="_blank">GitHub Repository</a>
+</p>
+<h2 id="description">Description</h2>
+<p>Do you spend time tuning parameters for complex scientific simulators? Perhaps you use grid search or optimization to match parameters to data. These find a best-fit set, but often don&rsquo;t reveal your confidence or if other parameters also fit. This uncertainty is crucial for reliable conclusions.</p>
+<p>This tutorial introduces <strong>Simulation-Based Inference (SBI)</strong>, a modern technique tackling this challenge. Unlike traditional Bayesian inference methods (like MCMC) that require mathematical likelihood functions, SBI works directly with your simulator&rsquo;s outputs. Using recent advances in probabilistic ML, it estimates the probability distribution of parameter values consistent with your observations, even for complex &ldquo;black-box&rdquo; simulators. It provides not just a single best guess, but full parameter distributions representing parameter uncertainties and potential interactions.</p>
+<h2 id="what-youll-learn">What You&rsquo;ll Learn</h2>
+<p>In this hands-on tutorial using the <strong>sbi Python package</strong>, you&rsquo;ll learn the practical steps:</p>
+<ol>
+<li><strong>Setting up the problem</strong> - Defining parameter ranges and checking model plausibility</li>
+<li><strong>Running SBI for parameter distributions</strong> - Applying different SBI techniques</li>
+<li><strong>Checking result reliability</strong> - Validating your inference results</li>
+<li><strong>Interpreting results</strong> - Drawing scientific conclusions from SBI outputs</li>
+</ol>
+<p>We cover different SBI techniques and how to apply them to real-world problems.</p>
+<h2 id="tutorial-content">Tutorial Content</h2>
+<h3 id="the-sbi-workflow">The SBI Workflow</h3>
+<p>The tutorial provides a comprehensive, practical introduction to SBI using the sbi Python package. We guide you through the entire practical workflow:</p>
+<ul>
+<li><strong>A-priori checks</strong>: Defining parameter ranges of interest and running initial simulations to check if the model can plausibly generate data similar to observations</li>
+<li><strong>Choosing and applying SBI methods</strong>: Learning about different SBI strategies (like those that directly estimate parameter probabilities, approximate likelihoods, or work with probability ratios) and selecting one suitable for your specific problem</li>
+<li><strong>A-posteriori checks</strong>: Evaluating how accurately the underlying machine learning models have learned to infer parameters</li>
+<li><strong>Interpretation</strong>: Understanding and drawing scientific conclusions from SBI results</li>
+</ul>
+<h3 id="why-sbi">Why SBI?</h3>
+<p>Traditional methods like grid search or numerical optimization algorithms can find a single &lsquo;best&rsquo; set of parameters. However, they often struggle when there are many parameters, and more importantly, they usually don&rsquo;t quantify the uncertainty associated with the result.</p>
+<p>SBI methods learn a statistical relationship directly from running your simulator multiple times with different inputs. Their key advantage is the ability to estimate the range of parameter values (and their probabilities) that are consistent with your observed data, providing a measure of uncertainty. This works even for complex &lsquo;black-box&rsquo; simulators where the internal equations might be unknown or intractable.</p>
+<h2 id="target-audience">Target Audience</h2>
+<p>This tutorial is aimed at:</p>
+<ul>
+<li>Scientists and engineers using Python for simulations</li>
+<li>Researchers working with computational models who need to estimate parameters from data</li>
+<li>Practitioners looking for methods to quantify parameter uncertainty in complex systems</li>
+<li>Anyone interested in probabilistic inference methods</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Proficiency in Python programming</li>
+<li>No prior knowledge of Bayesian statistics is required</li>
+<li>Basic understanding of scientific computing helpful but not essential</li>
+</ul>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion, participants will be able to:</p>
+<ul>
+<li>Understand the concept of Simulation-Based Inference (SBI) and its advantages for parameter estimation in complex simulators</li>
+<li>Apply the sbi Python package to estimate parameter ranges and uncertainty from simulation outputs</li>
+<li>Become familiar with common neural network-based SBI techniques and their use cases</li>
+<li>Evaluate the results of an SBI analysis to ensure reliability</li>
+<li>Perform the complete SBI workflow using the sbi package on their own problems</li>
+</ul>
+<h2 id="about-the-sbi-package">About the sbi Package</h2>
+<p>The <strong>sbi</strong> package implements state-of-the-art SBI algorithms, often using neural networks, and is actively developed by a large community. It&rsquo;s a NumFOCUS affiliated project with over 70 contributors and yearly collaborative hackathons. The package provides a unified interface for various SBI methods, making these powerful techniques accessible to domain scientists.</p>
+<h2 id="practical-applications">Practical Applications</h2>
+<p>The tutorial includes examples from various fields:</p>
+<ul>
+<li><strong>Epidemiology</strong>: Modeling disease spread with uncertainty quantification</li>
+<li><strong>Neuroscience</strong>: Inferring neural circuit parameters from recordings</li>
+<li><strong>Physics</strong>: Parameter estimation in particle physics simulations</li>
+<li><strong>Engineering</strong>: Calibrating complex engineering models</li>
+</ul>
+<h2 id="materials-and-resources">Materials and Resources</h2>
+<ul>
+<li>📚 <a href="https://github.com/janfb/euroscipy-2025-sbi-tutorial" target="_blank">Tutorial Materials</a>
+</li>
+<li>📦 <a href="https://sbi-dev.github.io/sbi/" target="_blank">sbi Package Documentation</a>
+</li>
+<li>📄 <a href="https://arxiv.org/abs/2508.12939" target="_blank">SBI Practical Guide Paper</a>
+</li>
+<li>🎥 <a href="https://pretalx.com/euroscipy-2025/talk/MU9HAJ/" target="_blank">EuroSciPy 2025 Session</a>
+</li>
+</ul>
+<hr>
+<p><em>This tutorial equips participants with the practical skills to effectively use the sbi package for more reliable parameter estimation and uncertainty quantification in their simulation-based models.</em></p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://janfb.github.io/tags/simulation-based-inference/">Simulation-Based Inference</a></li>
+      <li><a href="https://janfb.github.io/tags/sbi/">SBI</a></li>
+      <li><a href="https://janfb.github.io/tags/bayesian-inference/">Bayesian Inference</a></li>
+      <li><a href="https://janfb.github.io/tags/tutorial/">Tutorial</a></li>
+      <li><a href="https://janfb.github.io/tags/euroscipy/">EuroSciPy</a></li>
+      <li><a href="https://janfb.github.io/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="https://janfb.github.io/tags/python/">Python</a></li>
+      <li><a href="https://janfb.github.io/tags/parameter-estimation/">Parameter Estimation</a></li>
+      <li><a href="https://janfb.github.io/tags/uncertainty-quantification/">Uncertainty Quantification</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://janfb.github.io/">Jan Teusen (né Boelts)</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Benchmarking Simulation-Based Inference | Jan Teusen (né Boelts)</title>
+<meta name="keywords" content="machine learning, simulation-based inference, benchmarking, AISTATS">
+<meta name="description" content="A comprehensive benchmark suite for evaluating simulation-based inference methods across diverse tasks">
+<meta name="author" content="Jan-Matthis Lueckmann,&thinsp;Jan Boelts,&thinsp;David S. Greenberg,&thinsp;Pedro J. Gonçalves,&thinsp;Jakob H. Macke">
+<link rel="canonical" href="https://janfb.github.io/papers/benchmarking-2021/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://janfb.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://janfb.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://janfb.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://janfb.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://janfb.github.io/papers/benchmarking-2021/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Benchmarking Simulation-Based Inference" />
+<meta property="og:description" content="A comprehensive benchmark suite for evaluating simulation-based inference methods across diverse tasks" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://janfb.github.io/papers/benchmarking-2021/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2021-04-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-13T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Benchmarking Simulation-Based Inference"/>
+<meta name="twitter:description" content="A comprehensive benchmark suite for evaluating simulation-based inference methods across diverse tasks"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://janfb.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Benchmarking Simulation-Based Inference",
+      "item": "https://janfb.github.io/papers/benchmarking-2021/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Benchmarking Simulation-Based Inference",
+  "name": "Benchmarking Simulation-Based Inference",
+  "description": "A comprehensive benchmark suite for evaluating simulation-based inference methods across diverse tasks",
+  "keywords": [
+    "machine learning", "simulation-based inference", "benchmarking", "AISTATS"
+  ],
+  "articleBody": " Download Paper Code Website Abstract Simulation-based inference (SBI) has emerged as a powerful framework for performing Bayesian inference when the likelihood function is intractable but simulations from the model are feasible. The rapid development of SBI methods has created a need for systematic evaluation and comparison. We present a comprehensive benchmark for SBI methods, including tasks with different properties: dimensionality of parameters and data, simulation budget, and requirements for amortization. Our benchmark includes reference posteriors obtained with expensive Monte Carlo methods, standardized implementations of competing algorithms, and metrics for accuracy and computational efficiency. We evaluate six SBI algorithms across ten benchmark tasks, revealing strengths and weaknesses of different approaches. Sequential methods generally achieve better accuracy per simulation, while amortized methods excel when many posterior evaluations are needed. Flow-based methods consistently outperform methods based on mixture density networks. Our benchmark provides a foundation for systematic progress in SBI research and is available as an open-source Python package.\nCitation @inproceedings{lueckmann2021benchmarking, title={Benchmarking Simulation-Based Inference}, author={Lueckmann, Jan-Matthis and Boelts, Jan and Greenberg, David S and Gon{\\c{c}}alves, Pedro J and Macke, Jakob H}, booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)}, pages={343--351}, year={2021}, organization={PMLR} } ",
+  "wordCount" : "190",
+  "inLanguage": "en",
+  "datePublished": "2021-04-13T00:00:00Z",
+  "dateModified": "2021-04-13T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jan-Matthis Lueckmann"
+  }, {
+    "@type": "Person",
+    "name": "Jan Boelts"
+  }, {
+    "@type": "Person",
+    "name": "David S. Greenberg"
+  }, {
+    "@type": "Person",
+    "name": "Pedro J. Gonçalves"
+  }, {
+    "@type": "Person",
+    "name": "Jakob H. Macke"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://janfb.github.io/papers/benchmarking-2021/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jan Teusen (né Boelts)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://janfb.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://janfb.github.io/" accesskey="h" title="Jan Boelts (Teusen)">
+                <img src="https://janfb.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Jan Boelts (Teusen)</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://janfb.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/software/" title="Software">
+                    <span>Software</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/talks/" title="Talks">
+                    <span>Talks</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://janfb.github.io/courses/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://transferlab.ai/authors/jan-teusen/" title="Blog">
+                    <span>Blog</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Benchmarking Simulation-Based Inference
+    </h1>
+    <div class="post-meta"><span title='2021-04-13 00:00:00 +0000 UTC'>April 2021</span>&nbsp;&middot;&nbsp;Jan-Matthis Lueckmann,&thinsp;Jan Boelts,&thinsp;David S. Greenberg,&thinsp;Pedro J. Gonçalves,&thinsp;Jakob H. Macke&nbsp;&middot;&nbsp;<a href="https://proceedings.mlr.press/v130/lueckmann21a.html" rel="noopener noreferrer" target="_blank">AISTATS 2021</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://proceedings.mlr.press/v130/lueckmann21a/lueckmann21a.pdf" target="_blank">Paper</a>
+</li>
+<li><a href="https://github.com/sbi-benchmark/sbibm" target="_blank">Code</a>
+</li>
+<li><a href="https://sbi-benchmark.github.io" target="_blank">Website</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>Simulation-based inference (SBI) has emerged as a powerful framework for performing Bayesian inference when the likelihood function is intractable but simulations from the model are feasible. The rapid development of SBI methods has created a need for systematic evaluation and comparison. We present a comprehensive benchmark for SBI methods, including tasks with different properties: dimensionality of parameters and data, simulation budget, and requirements for amortization. Our benchmark includes reference posteriors obtained with expensive Monte Carlo methods, standardized implementations of competing algorithms, and metrics for accuracy and computational efficiency. We evaluate six SBI algorithms across ten benchmark tasks, revealing strengths and weaknesses of different approaches. Sequential methods generally achieve better accuracy per simulation, while amortized methods excel when many posterior evaluations are needed. Flow-based methods consistently outperform methods based on mixture density networks. Our benchmark provides a foundation for systematic progress in SBI research and is available as an open-source Python package.</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@inproceedings</span>{lueckmann2021benchmarking,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Benchmarking Simulation-Based Inference}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Lueckmann, Jan-Matthis and Boelts, Jan and Greenberg, David S and Gon{\c{c}}alves, Pedro J and Macke, Jakob H}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">booktitle</span>=<span style="color:#a50">{International Conference on Artificial Intelligence and Statistics (AISTATS)}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">pages</span>=<span style="color:#a50">{343--351}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span>=<span style="color:#a50">{2021}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">organization</span>=<span style="color:#a50">{PMLR}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://janfb.github.io/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="https://janfb.github.io/tags/simulation-based-inference/">Simulation-Based Inference</a></li>
+      <li><a href="https://janfb.github.io/tags/benchmarking/">Benchmarking</a></li>
+      <li><a href="https://janfb.github.io/tags/aistats/">AISTATS</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://janfb.github.io/">Jan Teusen (né Boelts)</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SBI on Jan Teusen (né Boelts)</title>
+    <link>https://janfb.github.io/tags/sbi/</link>
+    <description>Recent content in SBI on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/sbi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulation-Based Inference: A Practical Guide</title>
+      <link>https://janfb.github.io/papers/sbi-tutorial-2025/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-tutorial-2025/</guid>
+      <description>A practical guide for practitioners aiming to apply simulation-based inference methods for scientific discovery</description>
+    </item>
+    <item>
+      <title>Pyro Meets SBI: Unlocking Hierarchical Bayesian Inference for Complex Simulators</title>
+      <link>https://janfb.github.io/talks/pyro-meets-sbi-2025/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/talks/pyro-meets-sbi-2025/</guid>
+      <description>Bridging simulation-based inference and probabilistic programming for hierarchical Bayesian analysis of complex simulators</description>
+    </item>
+    <item>
+      <title>Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi</title>
+      <link>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</guid>
+      <description>Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators</description>
+    </item>
+    <item>
+      <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
+      <link>https://janfb.github.io/papers/sbi-reloaded/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
+      <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
+    </item>
+    <item>
+      <title>Simulated Data is All You Need: Bayesian Parameter Inference for Scientific Simulators with SBI</title>
+      <link>https://janfb.github.io/talks/sbi-euroscipy-2024/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/talks/sbi-euroscipy-2024/</guid>
+      <description>A EuroSciPy 2024 talk on using simulation-based inference (SBI) for Bayesian parameter estimation in scientific models, utilizing the sbi library.</description>
+    </item>
+    <item>
+      <title>Simulation-based inference for efficient identification of generative models in connectomics</title>
+      <link>https://janfb.github.io/papers/connectomics-2023/</link>
+      <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/connectomics-2023/</guid>
+      <description>Using simulation-based inference to identify synaptic connectivity rules in anatomically realistic cortical connectomes</description>
+    </item>
+    <item>
+      <title>Simulation-Based Inference Training</title>
+      <link>https://janfb.github.io/courses/course1/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/course1/</guid>
+      <description>This course covers Simulation-Based Inference, a Bayesian approach for complex models using neural networks for density estimation.</description>
+    </item>
+    <item>
+      <title>Flexible and efficient simulation-based inference for models of decision-making</title>
+      <link>https://janfb.github.io/papers/flexible-ddm-2022/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/flexible-ddm-2022/</guid>
+      <description>We introduce Mixed Neural Likelihood Estimation (MNLE), a simulation-based inference method for models with both continuous and discrete data, enabling efficient Bayesian inference in decision-making models.</description>
+    </item>
+  </channel>
+</rss>

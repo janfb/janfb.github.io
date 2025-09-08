@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Probabilistic Modeling on Jan Teusen (né Boelts)</title>
+    <link>https://janfb.github.io/tags/probabilistic-modeling/</link>
+    <description>Recent content in Probabilistic Modeling on Jan Teusen (né Boelts)</description>
+    <generator>Hugo -- 0.149.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://janfb.github.io/tags/probabilistic-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
+      <link>https://janfb.github.io/papers/sbi-reloaded/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
+      <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
+    </item>
+    <item>
+      <title>Mind the Gap: Methods and Applicability of Simulation-Based Inference</title>
+      <link>https://janfb.github.io/talks/transferlab-2024/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/talks/transferlab-2024/</guid>
+      <description>Research talk on bridging the gap between SBI methods and practical applications</description>
+    </item>
+    <item>
+      <title>Simulation-Based Inference Training</title>
+      <link>https://janfb.github.io/courses/course1/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/course1/</guid>
+      <description>This course covers Simulation-Based Inference, a Bayesian approach for complex models using neural networks for density estimation.</description>
+    </item>
+    <item>
+      <title>sbi: Simulation-Based Inference</title>
+      <link>https://janfb.github.io/software/sbi/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/software/sbi/</guid>
+      <description>A Python package for simulation-based inference, designed to meet the needs of both researchers and practitioners</description>
+    </item>
+  </channel>
+</rss>
