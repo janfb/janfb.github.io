@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jan Teusen (né Boelts)</title>
-    <link>https://janfb.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Jan Teusen (né Boelts)</description>
     <generator>Hugo -- 0.149.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://janfb.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulation-Based Inference: A Practical Guide</title>
+      <link>http://localhost:1313/papers/sbi-tutorial-2025/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/sbi-tutorial-2025/</guid>
+      <description>A practical guide for practitioners aiming to apply simulation-based inference methods for scientific discovery</description>
+    </item>
+    <item>
+      <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
+      <link>http://localhost:1313/papers/sbi-reloaded/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/sbi-reloaded/</guid>
+      <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
+    </item>
     <item>
       <title>Dissecting origins of wiring specificity in dense cortical connectomes</title>
-      <link>https://janfb.github.io/papers/connectomes-2024/</link>
+      <link>http://localhost:1313/papers/connectomes-2024/</link>
       <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/connectomes-2024/</guid>
+      <guid>http://localhost:1313/papers/connectomes-2024/</guid>
       <description>Analyzing the origins of synaptic specificity in dense reconstructions of cortical circuits</description>
     </item>
     <item>
-      <title>sbi reloaded: a toolkit for simulation-based inference workflows</title>
-      <link>https://janfb.github.io/papers/sbi-reloaded/</link>
-      <pubDate>Sun, 17 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
-      <description>A comprehensive update to the sbi package, introducing new features for flexible and efficient simulation-based inference workflows</description>
-    </item>
-    <item>
       <title>Streuobstwiesen Classification: AI for Environmental Monitoring</title>
-      <link>https://janfb.github.io/software/streuobstwiesen/</link>
+      <link>http://localhost:1313/software/streuobstwiesen/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/software/streuobstwiesen/</guid>
+      <guid>http://localhost:1313/software/streuobstwiesen/</guid>
       <description>Open-source ML solution for automated classification of traditional orchards from satellite imagery</description>
     </item>
     <item>
       <title>Simulated Data is All You Need: Bayesian Parameter Inference for Scientific Simulators with SBI</title>
-      <link>https://janfb.github.io/talks/sbi-euroscipy-2024/</link>
+      <link>http://localhost:1313/talks/sbi-euroscipy-2024/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/talks/sbi-euroscipy-2024/</guid>
+      <guid>http://localhost:1313/talks/sbi-euroscipy-2024/</guid>
       <description>A EuroSciPy 2024 talk on using simulation-based inference (SBI) for Bayesian parameter estimation in scientific models, utilizing the sbi library.</description>
     </item>
     <item>
-      <title>Simulation-based inference: an introduction for applied mathematicians</title>
-      <link>https://janfb.github.io/papers/sbi-tutorial-2024/</link>
-      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/sbi-tutorial-2024/</guid>
-      <description>A comprehensive tutorial introduction to simulation-based inference methods for applied mathematicians and practitioners</description>
-    </item>
-    <item>
       <title>Mind the Gap: Methods and Applicability of Simulation-Based Inference</title>
-      <link>https://janfb.github.io/talks/transferlab-2024/</link>
+      <link>http://localhost:1313/talks/transferlab-2024/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/talks/transferlab-2024/</guid>
+      <guid>http://localhost:1313/talks/transferlab-2024/</guid>
       <description>Research talk on bridging the gap between SBI methods and practical applications</description>
     </item>
     <item>
       <title>Simulation-based inference for efficient identification of generative models in connectomics</title>
-      <link>https://janfb.github.io/papers/connectomics-2023/</link>
+      <link>http://localhost:1313/papers/connectomics-2023/</link>
       <pubDate>Wed, 23 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/connectomics-2023/</guid>
+      <guid>http://localhost:1313/papers/connectomics-2023/</guid>
       <description>Using simulation-based inference to identify synaptic connectivity rules in anatomically realistic cortical connectomes</description>
     </item>
     <item>
       <title>Simulation-Based Inference Training</title>
-      <link>https://janfb.github.io/courses/course1/</link>
+      <link>http://localhost:1313/courses/course1/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/courses/course1/</guid>
+      <guid>http://localhost:1313/courses/course1/</guid>
       <description>This course covers Simulation-Based Inference, a Bayesian approach for complex models using neural networks for density estimation.</description>
     </item>
     <item>
       <title>Simulation-Based Inference for Computational Neuroscience</title>
-      <link>https://janfb.github.io/talks/bernstein-2022/</link>
+      <link>http://localhost:1313/talks/bernstein-2022/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/talks/bernstein-2022/</guid>
+      <guid>http://localhost:1313/talks/bernstein-2022/</guid>
       <description>Invited talk on applying simulation-based inference to neuroscience models</description>
     </item>
     <item>
       <title>Flexible and efficient simulation-based inference for models of decision-making</title>
-      <link>https://janfb.github.io/papers/flexible-ddm-2022/</link>
+      <link>http://localhost:1313/papers/flexible-ddm-2022/</link>
       <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/flexible-ddm-2022/</guid>
+      <guid>http://localhost:1313/papers/flexible-ddm-2022/</guid>
       <description>We introduce Mixed Neural Likelihood Estimation (MNLE), a simulation-based inference method for models with both continuous and discrete data, enabling efficient Bayesian inference in decision-making models.</description>
     </item>
     <item>
       <title>GATSBI: Generative Adversarial Training for Simulation-Based Inference</title>
-      <link>https://janfb.github.io/papers/gatsbi-2022/</link>
+      <link>http://localhost:1313/papers/gatsbi-2022/</link>
       <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/gatsbi-2022/</guid>
+      <guid>http://localhost:1313/papers/gatsbi-2022/</guid>
       <description>A new approach to simulation-based inference using generative adversarial networks for improved sample efficiency</description>
     </item>
     <item>
       <title>SBI: Simulation-Based Inference Toolkit</title>
-      <link>https://janfb.github.io/software/sbi/</link>
+      <link>http://localhost:1313/software/sbi/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/software/sbi/</guid>
+      <guid>http://localhost:1313/software/sbi/</guid>
       <description>SBI: A Python package for simulation-based inference</description>
     </item>
     <item>
       <title>Benchmarking Simulation-Based Inference</title>
-      <link>https://janfb.github.io/papers/benchmarking-2021/</link>
+      <link>http://localhost:1313/papers/benchmarking-2021/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/benchmarking-2021/</guid>
+      <guid>http://localhost:1313/papers/benchmarking-2021/</guid>
       <description>A comprehensive benchmark suite for evaluating simulation-based inference methods across diverse tasks</description>
     </item>
     <item>
       <title>sbi: A toolkit for simulation-based inference</title>
-      <link>https://janfb.github.io/papers/sbi-joss-2020/</link>
+      <link>http://localhost:1313/papers/sbi-joss-2020/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/papers/sbi-joss-2020/</guid>
+      <guid>http://localhost:1313/papers/sbi-joss-2020/</guid>
       <description>The original sbi package paper introducing a unified Python toolkit for simulation-based inference</description>
     </item>
     <item>
       <title>List of Irregular Verbs Across Romance Languages</title>
-      <link>https://janfb.github.io/data/data1/</link>
+      <link>http://localhost:1313/data/data1/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/data/data1/</guid>
+      <guid>http://localhost:1313/data/data1/</guid>
       <description>This dataset contains all irregular verbs in known Romance languages.</description>
     </item>
     <item>
       <title>Portugese Irregular Verbs</title>
-      <link>https://janfb.github.io/books/book1/</link>
+      <link>http://localhost:1313/books/book1/</link>
       <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/books/book1/</guid>
+      <guid>http://localhost:1313/books/book1/</guid>
       <description>This book discusses Portugese irregular verbs in great details.</description>
     </item>
   </channel>

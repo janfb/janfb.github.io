@@ -6,14 +6,14 @@
     <description>Recent content in Probabilistic Modeling on Jan Teusen (né Boelts)</description>
     <generator>Hugo -- 0.149.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://janfb.github.io/tags/probabilistic-modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>sbi reloaded: a toolkit for simulation-based inference workflows</title>
+      <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
       <link>https://janfb.github.io/papers/sbi-reloaded/</link>
-      <pubDate>Sun, 17 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
-      <description>A comprehensive update to the sbi package, introducing new features for flexible and efficient simulation-based inference workflows</description>
+      <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
     </item>
     <item>
       <title>Mind the Gap: Methods and Applicability of Simulation-Based Inference</title>
