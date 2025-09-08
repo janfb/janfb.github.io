@@ -6,6 +6,10 @@ tags: ["simulation-based inference", "sbi", "Pyro", "hierarchical Bayesian infer
 author: ["Jan Teusen", "Seth Axen"]
 description: "Bridging simulation-based inference and probabilistic programming for hierarchical Bayesian analysis of complex simulators" 
 summary: "This talk introduces a novel approach that bridges SBI and Pyro to enable simulation-based hierarchical Bayesian inference, combining SBI's ability to handle intractable simulators with Pyro's expressive power for complex hierarchical structures."
+cover:
+    image: "figure1.png"
+    alt: "Pyro meets SBI at EuroSciPy 2025"
+    relative: false
 editPost:
     URL: "https://pretalx.com/euroscipy-2025/talk/KCYYTF/"
     Text: "EuroSciPy 2025"

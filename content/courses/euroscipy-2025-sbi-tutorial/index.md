@@ -6,6 +6,10 @@ tags: ["simulation-based inference", "sbi", "Bayesian inference", "tutorial", "E
 author: ["Jan Teusen"]
 description: "Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators" 
 summary: "A comprehensive hands-on tutorial at EuroSciPy 2025 teaching scientists and engineers how to use simulation-based inference (SBI) for Bayesian parameter estimation in complex simulators, providing full uncertainty quantification beyond simple best-fit approaches."
+cover:
+    image: "logo.png"
+    alt: "SBI Tutorial"
+    relative: false
 editPost:
     URL: "https://pretalx.com/euroscipy-2025/talk/MU9HAJ/"
     Text: "EuroSciPy 2025"
