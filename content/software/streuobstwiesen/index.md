@@ -1,6 +1,7 @@
 ---
 title: "Streuobstwiesen Classification: AI for Environmental Monitoring"
 date: 2024-11-01
+draft: true
 url: /software/streuobstwiesen/
 tags: ["machine learning", "computer vision", "environmental monitoring", "satellite imagery", "open source", "GIS"]
 author: ["Jan Teusen", "AI Kommune Team"]
