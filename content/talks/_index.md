@@ -1,4 +1,4 @@
 ---
 title: "Talks"
-description: "Invited talks at conferences and seminars."
+description: "Conference presentations, invited talks, and workshop tutorials on machine learning and simulation-based inference"
 ---

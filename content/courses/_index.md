@@ -1,4 +1,4 @@
 ---
-title: "Courses"
-description: "Courses on simulation-based inference (SBI) and related topics."
+title: "Teaching"
+description: "Courses, workshops, and educational materials on machine learning, simulation-based inference, and probabilistic modeling"
 ---
