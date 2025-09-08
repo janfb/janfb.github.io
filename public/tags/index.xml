@@ -58,6 +58,69 @@
       <description></description>
     </item>
     <item>
+      <title>Decision-Making</title>
+      <link>https://janfb.github.io/tags/decision-making/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/decision-making/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drift-Diffusion Model</title>
+      <link>https://janfb.github.io/tags/drift-diffusion-model/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/drift-diffusion-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EuroSciPy</title>
+      <link>https://janfb.github.io/tags/euroscipy/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/euroscipy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hierarchical Bayesian Inference</title>
+      <link>https://janfb.github.io/tags/hierarchical-bayesian-inference/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/hierarchical-bayesian-inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probabilistic Programming</title>
+      <link>https://janfb.github.io/tags/probabilistic-programming/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/probabilistic-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pyro</title>
+      <link>https://janfb.github.io/tags/pyro/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/pyro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parameter Estimation</title>
+      <link>https://janfb.github.io/tags/parameter-estimation/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/parameter-estimation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://janfb.github.io/tags/python/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uncertainty Quantification</title>
+      <link>https://janfb.github.io/tags/uncertainty-quantification/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/tags/uncertainty-quantification/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Open Source</title>
       <link>https://janfb.github.io/tags/open-source/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
@@ -69,13 +132,6 @@
       <link>https://janfb.github.io/tags/probabilistic-modeling/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://janfb.github.io/tags/probabilistic-modeling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://janfb.github.io/tags/python/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -107,34 +163,6 @@
       <description></description>
     </item>
     <item>
-      <title>Computer Vision</title>
-      <link>https://janfb.github.io/tags/computer-vision/</link>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Environmental Monitoring</title>
-      <link>https://janfb.github.io/tags/environmental-monitoring/</link>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/tags/environmental-monitoring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GIS</title>
-      <link>https://janfb.github.io/tags/gis/</link>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/tags/gis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Satellite Imagery</title>
-      <link>https://janfb.github.io/tags/satellite-imagery/</link>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/tags/satellite-imagery/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>EuroSciPy 2024</title>
       <link>https://janfb.github.io/tags/euroscipy-2024/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
@@ -160,13 +188,6 @@
       <link>https://janfb.github.io/tags/computational-modeling/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://janfb.github.io/tags/computational-modeling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Decision-Making</title>
-      <link>https://janfb.github.io/tags/decision-making/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/tags/decision-making/</guid>
       <description></description>
     </item>
     <item>

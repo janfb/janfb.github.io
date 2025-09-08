@@ -16,18 +16,18 @@
       <description>A practical guide for practitioners aiming to apply simulation-based inference methods for scientific discovery</description>
     </item>
     <item>
+      <title>Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi</title>
+      <link>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</guid>
+      <description>Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators</description>
+    </item>
+    <item>
       <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
       <link>https://janfb.github.io/papers/sbi-reloaded/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://janfb.github.io/papers/sbi-reloaded/</guid>
       <description>A comprehensive toolkit for simulation-based inference workflows, providing researchers with flexible and efficient tools for Bayesian inference</description>
-    </item>
-    <item>
-      <title>Streuobstwiesen Classification: AI for Environmental Monitoring</title>
-      <link>https://janfb.github.io/software/streuobstwiesen/</link>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://janfb.github.io/software/streuobstwiesen/</guid>
-      <description>Open-source ML solution for automated classification of traditional orchards from satellite imagery</description>
     </item>
     <item>
       <title>Mind the Gap: Methods and Applicability of Simulation-Based Inference</title>

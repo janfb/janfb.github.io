@@ -35,13 +35,49 @@
     <loc>https://janfb.github.io/tags/tutorial/</loc>
     <lastmod>2025-08-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://janfb.github.io/tags/decision-making/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/drift-diffusion-model/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/euroscipy/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/hierarchical-bayesian-inference/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/probabilistic-programming/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/pyro/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/talks/pyro-meets-sbi-2025/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/talks/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</loc>
+    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/parameter-estimation/</loc>
+    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/python/</loc>
+    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/courses/</loc>
+    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://janfb.github.io/tags/uncertainty-quantification/</loc>
+    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://janfb.github.io/tags/open-source/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://janfb.github.io/tags/probabilistic-modeling/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/tags/python/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://janfb.github.io/papers/sbi-reloaded/</loc>
@@ -62,22 +98,7 @@
     <loc>https://janfb.github.io/tags/neuroscience/</loc>
     <lastmod>2024-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://janfb.github.io/tags/computer-vision/</loc>
-    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/tags/environmental-monitoring/</loc>
-    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/tags/gis/</loc>
-    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/tags/satellite-imagery/</loc>
-    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://janfb.github.io/software/</loc>
-    <lastmod>2024-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/software/streuobstwiesen/</loc>
     <lastmod>2024-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://janfb.github.io/tags/euroscipy-2024/</loc>
@@ -87,9 +108,6 @@
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://janfb.github.io/talks/sbi-euroscipy-2024/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/talks/</loc>
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://janfb.github.io/talks/transferlab-2024/</loc>
@@ -104,14 +122,8 @@
     <loc>https://janfb.github.io/courses/course1/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://janfb.github.io/courses/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://janfb.github.io/tags/computational-modeling/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://janfb.github.io/tags/decision-making/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://janfb.github.io/talks/bernstein-2022/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>

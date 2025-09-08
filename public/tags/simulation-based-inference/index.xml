@@ -16,6 +16,20 @@
       <description>A practical guide for practitioners aiming to apply simulation-based inference methods for scientific discovery</description>
     </item>
     <item>
+      <title>Pyro Meets SBI: Unlocking Hierarchical Bayesian Inference for Complex Simulators</title>
+      <link>https://janfb.github.io/talks/pyro-meets-sbi-2025/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/talks/pyro-meets-sbi-2025/</guid>
+      <description>Bridging simulation-based inference and probabilistic programming for hierarchical Bayesian analysis of complex simulators</description>
+    </item>
+    <item>
+      <title>Beyond Likelihoods: Bayesian Parameter Inference for Black-Box Simulators with sbi</title>
+      <link>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://janfb.github.io/courses/euroscipy-2025-sbi-tutorial/</guid>
+      <description>Hands-on tutorial on simulation-based inference for parameter estimation in complex simulators</description>
+    </item>
+    <item>
       <title>sbi reloaded: A toolkit for simulation-based inference workflows</title>
       <link>https://janfb.github.io/papers/sbi-reloaded/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
