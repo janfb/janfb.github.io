@@ -44,38 +44,54 @@ We show how to:
 3. Leverage Pyro's infrastructure for efficient hierarchical inference
 4. Maintain the full expressiveness of both frameworks
 
-## Case Study: Hierarchical Drift-Diffusion Model
+## Case Study: The Cookie Factory Problem 🍪
 
-We illustrate the methodology using a key example from cognitive science: fitting a hierarchical drift-diffusion model (DDM) to choice data. The DDM is a widely-used model of decision-making that:
-- Simulates the cognitive process of evidence accumulation
-- Has an intractable likelihood for many parameter combinations
-- Naturally fits into hierarchical structures (multiple subjects, conditions)
+We illustrate the methodology using an accessible example: a cookie factory with 5 locations producing chocolate chip cookies. This example demonstrates:
 
-Our approach successfully:
-- Combines information across multiple simulated subjects
-- Handles the intractable DDM likelihood
-- Enables full Bayesian inference over hierarchical parameters
-- Provides uncertainty quantification at both individual and group levels
+### The Problem Setup
+- **Data**: Chocolate chip counts from 30 cookies at each of 5 factory locations
+- **Challenge**: Locations follow the same recipe but may vary in execution
+- **Goal**: Understand both global patterns and location-specific variations
+
+### Three Modeling Approaches
+1. **Pooled Model**: All locations identical (ignores differences)
+2. **Unpooled Model**: Each location independent (no information sharing)
+3. **Hierarchical Model**: Locations are different but related (optimal balance)
+
+The hierarchical approach demonstrates the power of partial pooling and shrinkage effects, where extreme estimates are pulled toward the global mean.
+
+### Real-World Application: Drift-Diffusion Model
+While the talk focused on the cookie example for clarity, the approach extends to complex cognitive models like the Drift-Diffusion Model (DDM) for decision-making, where analytical likelihoods are intractable
 
 ## Technical Implementation
 
 The implementation leverages recent developments in the sbi package that facilitate this workflow:
 
 ```python
-# Learn likelihood approximation with sbi
-likelihood_nn = sbi.train_likelihood_estimator(simulator, data)
+# Step 1: Train neural likelihood estimator with sbi
+from sbi.inference import NLE
+nle = NLE().append_simulations(theta, x)
+estimator = nle.train()
 
-# Integrate into Pyro hierarchical model
-with pyro.plate("subjects", n_subjects):
-    # Group-level parameters
-    group_drift = pyro.sample("group_drift", Normal(0, 1))
+# Step 2: Integrate into Pyro hierarchical model
+def sbi_pyro_model(locations, chips=None):
+    # Hyperpriors - global parameters
+    mu = pyro.sample("mu", dist.Gamma(2, 0.2))
+    sigma = pyro.sample("sigma", dist.Exponential(1))
     
-    # Individual parameters
-    drift = pyro.sample("drift", Normal(group_drift, 0.5))
+    # Location-specific parameters
+    with pyro.plate("location", n_locations):
+        lam = pyro.sample("lam", 
+            dist.Gamma(mu**2/sigma**2, mu/sigma**2))
     
-    # Use SBI-learned likelihood
-    pyro.sample("data", SBILikelihood(likelihood_nn, drift))
+    # Use SBI-learned likelihood wrapped for Pyro
+    with pyro.plate("data", len(chips)):
+        pyro.sample("obs", 
+            SBItoPyro(estimator, lam[locations]), 
+            obs=chips)
 ```
+
+The `SBItoPyro` wrapper is a lightweight class (~150 lines) that handles shape conversions between sbi and Pyro
 
 ## Impact and Applications
 
@@ -86,10 +102,11 @@ This integration significantly expands the scope of rigorous Bayesian inference,
 - **Epidemiology**: Population-level disease models
 - **Economics**: Agent-based models with group structure
 
-## Collaboration
+## Collaboration & Acknowledgments
 
 **Presentation by:** Jan Teusen  
-**Implementation in sbi package by:** Seth Axen
+**Pyro-SBI Bridge Implementation:** Seth Axen (developed during SBI Hackathon 2025)  
+**Cookie Factory Example:** Adapted from Juan Camilo Orduz's [blog post](https://juanitorduz.github.io/cookies_example_numpyro/)
 
 This work represents a collaborative effort to make advanced hierarchical modeling accessible for simulator-based research, combining theoretical innovation with practical software development.
 
