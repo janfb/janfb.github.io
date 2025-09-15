@@ -6,6 +6,10 @@ author: ["Jan Boelts", "Philipp Harth", "Richard Gao", "Daniel Udvary", "Felipe 
 description: "Using simulation-based inference to identify synaptic connectivity rules in anatomically realistic cortical connectomes" 
 tags: ["neuroscience", "connectomics", "simulation-based inference", "sbi", "cortical circuits"]
 summary: "We demonstrate how simulation-based inference can efficiently identify synaptic connectivity rules in dense cortical connectomes, enabling analysis of complex brain circuit organization." 
+cover:
+    image: "sbi-for-connectomics.png"
+    alt: "Simulation-based inference for computational connectomics"
+    relative: false
 editPost:
     URL: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011406"
     Text: "PLOS Computational Biology"

@@ -11,7 +11,6 @@ cover:
     alt: "Mixed Neural Likelihood Estimation"
     relative: false
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
     Text: "eLife"
 
 ---
