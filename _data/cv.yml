@@ -1,0 +1,14 @@
+# CV scaffolding — fill these sections in. Each block becomes a section on /cv/.
+# Reference for shapes: https://github.com/alshedivat/al-folio#cv
+
+- title: Education
+  type: time_table
+  contents: []
+
+- title: Experience
+  type: time_table
+  contents: []
+
+- title: Skills
+  type: nested_list
+  contents: []
