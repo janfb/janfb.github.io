@@ -415,23 +415,25 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.8rem;
 
     a {
+      margin: 0 0.4rem;
+
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 0.25rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 1.6rem;
+        height: 1.8rem;
+        margin-bottom: 0.25rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.6rem;
+          height: 1.6rem;
         }
       }
 
@@ -747,40 +749,67 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
 
       .preview {
+        max-width: 110px;
+        max-height: 80px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
       }
 
       .abbr {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
+        text-align: center;
 
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          background-color: transparent !important;
+          color: var(--global-text-color-light) !important;
+          border: 1px solid var(--global-divider-color);
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.04em;
+          padding: 0.1rem 0.45rem;
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          text-transform: lowercase;
 
-          a {
-            color: white;
+          a,
+          div {
+            color: var(--global-text-color-light) !important;
 
             &:hover {
               text-decoration: none;
+              color: var(--global-theme-color) !important;
             }
           }
         }
 
         .award {
           color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
+          border-color: var(--global-theme-color);
         }
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.35;
+        margin-bottom: 0.15rem;
       }
 
       .author {
+        font-size: 0.92rem;
+        line-height: 1.4;
+        color: var(--global-text-color);
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -807,23 +836,48 @@ footer.sticky-bottom {
         }
       }
 
+      // Periodical / venue line
+      .periodical {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: var(--global-text-color-light);
+      }
+
+      // Plain-text inline action links (Abs · DOI · arXiv · PDF · Code · …)
       .links {
+        margin-top: 0.35rem;
+        font-size: 0.85rem;
+
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
+          color: var(--global-text-color-light);
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0 0.65rem 0 0;
+          font-size: inherit;
+          font-weight: 400;
+          text-transform: lowercase;
+          letter-spacing: 0.02em;
+          line-height: 1.4;
+          box-shadow: none;
+          border-radius: 0;
 
           &:hover {
             color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            background: none;
+            border: none;
+          }
+
+          &:focus {
+            box-shadow: none;
           }
         }
+
         a.award.btn {
-          border-color: var(--global-highlight-color);
+          color: var(--global-highlight-color);
+          border-color: transparent;
         }
       }
 
