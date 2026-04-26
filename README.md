@@ -9,7 +9,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Site serves at <http://localhost:4000/personal-website/>.
+Site serves at <http://localhost:4000/>.
 
 ## Deployment
 
