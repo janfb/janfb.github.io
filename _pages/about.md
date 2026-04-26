@@ -8,9 +8,6 @@ profile:
   align: right
   image: thumbnail.png
   image_circular: false
-  more_info: >
-    <p>TransferLab · appliedAI Institute</p>
-    <p>Munich, Germany</p>
 
 selected_papers: true
 social: true
