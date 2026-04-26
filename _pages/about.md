@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior AI Researcher at <a href="https://transferlab.ai/authors/jan-teusen/">TransferLab</a> · Lead developer of <a href="https://sbi-dev.github.io/sbi">sbi</a>
+subtitle: Senior AI Researcher at <a href="https://transferlab.ai/authors/jan-teusen/">TransferLab</a> · Lead developer of <a href="https://sbi.readthedocs.io/en/latest">sbi</a>
 
 profile:
   align: right
@@ -26,7 +26,7 @@ latest_posts:
 
 I'm a senior AI researcher at the [TransferLab](https://transferlab.ai/authors/jan-teusen/) of the [appliedAI Institute for Europe](https://appliedai-institute.de). I work on **simulation-based inference** (SBI) and probabilistic machine learning, with a focus on making advanced ML methods accessible to scientists and engineers through open-source software and education.
 
-I'm one of the lead developers of [`sbi`](https://sbi-dev.github.io/sbi), a NumFOCUS-affiliated Python toolkit for SBI used across neuroscience, cosmology, epidemiology, and beyond. My research connects probabilistic ML methods with real-world scientific applications — recent work spans connectomics, decision-making models, and hierarchical Bayesian inference for complex simulators.
+I'm one of the lead developers of [`sbi`](https://sbi.readthedocs.io/en/latest), a NumFOCUS-affiliated Python toolkit for SBI used across neuroscience, cosmology, epidemiology, and beyond. My research connects probabilistic ML methods with real-world scientific applications — recent work spans connectomics, decision-making models, and hierarchical Bayesian inference for complex simulators.
 
 #### Research interests
 

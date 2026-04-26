@@ -5,5 +5,5 @@ description: Python toolkit for simulation-based inference. NumFOCUS-affiliated,
 img: assets/img/projects/sbi.png
 importance: 1
 github: https://github.com/sbi-dev/sbi
-redirect: https://sbi-dev.github.io/sbi/
+redirect: https://sbi.readthedocs.io/en/latest/
 ---
