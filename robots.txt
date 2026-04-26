@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://janfb.github.io/sitemap.xml
