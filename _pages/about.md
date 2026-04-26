@@ -21,9 +21,19 @@ latest_posts:
   limit: 3
 ---
 
-I'm a senior AI researcher at the [TransferLab](https://transferlab.ai/authors/jan-teusen/) of the [appliedAI Institute for Europe](https://appliedai-institute.de). I work on **simulation-based inference** (SBI) and probabilistic machine learning, with a focus on making advanced ML methods accessible to scientists and engineers through open-source software and education.
+I'm a senior AI researcher at the
+[TransferLab](https://transferlab.ai/authors/jan-teusen/) of the [appliedAI Institute
+for Europe](https://appliedai-institute.de). I work on **simulation-based inference**
+(SBI) and probabilistic machine learning, with a focus on making advanced ML methods
+accessible to scientists and engineers through open-source software and education.
 
-I'm one of the lead developers of [`sbi`](https://sbi.readthedocs.io/en/latest), a NumFOCUS-affiliated Python toolkit for SBI used across neuroscience, cosmology, epidemiology, and beyond. My research connects probabilistic ML methods with real-world scientific applications — recent work spans connectomics, decision-making models, and hierarchical Bayesian inference for complex simulators.
+I'm one of the lead developers of [`sbi`](https://sbi.readthedocs.io/en/latest), a
+NumFOCUS-affiliated Python toolkit for SBI used across neuroscience, cosmology,
+epidemiology, and beyond. My recent research extends SBI to simulators with
+mixed-type (continuous + discrete) parameters and to hierarchical Bayesian models for
+complex scientific simulators. In parallel, I work on fine-tuning vision foundation
+models for remote-sensing applications in the public sector — and, more broadly, on
+sovereign AI for public-sector, non-profit, and civil-society applications.
 
 #### Research interests
 
