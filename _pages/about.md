@@ -6,7 +6,7 @@ subtitle: Senior AI Researcher at <a href="https://transferlab.ai/authors/jan-te
 
 profile:
   align: right
-  image: prof_pic.png
+  image: thumbnail.png
   image_circular: false
   more_info: >
     <p>TransferLab · appliedAI Institute</p>

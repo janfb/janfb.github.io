@@ -1,14 +1,87 @@
-# CV scaffolding — fill these sections in. Each block becomes a section on /cv/.
-# Reference for shapes: https://github.com/alshedivat/al-folio#cv
+- title: Experience
+  type: time_table
+  contents:
+    - title: Senior AI Researcher
+      institution: appliedAI Institute for Europe — TransferLab
+      year: 2024 – present
+      location: Munich
+      description:
+        - Leading development of production ML systems — fine-tuning vision models (SAM with LoRA) for environmental monitoring, deployed as a QGIS plugin for public-sector use.
+        - Consulting on Large Industry Models (LIMs) for the German automotive sector, evaluating specialized vs. general-purpose AI strategies for industrial applications.
+        - Developing and maintaining open-source software for accessible AI/ML tools, including the <em>sbi</em> package for simulation-based inference.
+        - Implementing MLOps pipelines with experiment tracking and model versioning for reproducible research-to-production workflows.
+        - Designing and delivering workshops on recent AI/ML topics for academics and industry professionals.
+
+    - title: Doctoral Researcher
+      institution: University of Tübingen — Machine Learning in Science
+      year: 2021 – 2023
+      location: Tübingen
+      maindescription: Supervisor — Prof. Jakob Macke
+      description:
+        - Simulation-based inference for models of decision-making.
+        - Accessible software tools for simulation-based inference.
+
+    - title: Doctoral Researcher
+      institution: Technical University of Munich — Computational Neuroengineering
+      year: 2018 – 2020
+      location: Munich
+      maindescription: Supervisor — Prof. Jakob Macke
+      description:
+        - Simulation-based inference for computational connectomics.
+
+    - title: Research Assistant
+      institution: Technical University of Berlin — Brain-Computer Interfaces
+      year: 2015
+      location: Berlin
+      maindescription: Supervisor — Prof. Benjamin Blankertz
+      description:
+        - Study design and analysis of EEG brain-computer interfaces.
+
+    - title: Research Intern
+      institution: Various Institutions
+      year: 2013 – 2014
+      location: Vancouver, CA · Bogotá, CO
+      description:
+        - Research across cognitive neuroscience, biomedical engineering, and fMRI data analysis.
 
 - title: Education
   type: time_table
-  contents: []
+  contents:
+    - title: Ph.D. in Computer Science
+      institution: University of Tübingen
+      year: 2023
+      maindescription: Probabilistic Machine Learning for Neuroscience. Advisor — Prof. Jakob Macke.
 
-- title: Experience
+    - title: M.Sc. in Computational Neuroscience
+      institution: Technical University Berlin
+      year: 2018
+      maindescription: With Distinction.
+
+    - title: B.Sc. in Cognitive Science
+      institution: University of Osnabrück
+      year: 2015
+      maindescription: With Distinction.
+
+- title: Community & outreach
   type: time_table
-  contents: []
+  contents:
+    - title: Maintainer — <em>sbi</em>
+      institution: Python package for simulation-based inference
+      year: since 2021
 
-- title: Skills
-  type: nested_list
-  contents: []
+    - title: Reviewer
+      institution: NeurIPS, AISTATS, ICML, ICLR, JOSS, PLOS
+      year: since 2022
+      maindescription: Best Reviewer Award, ICML 2024 & 2025.
+
+    - title: Lecturer
+      institution: KI macht Schule — teaching AI to German high-school students
+      year: since 2021
+
+    - title: Mentor
+      institution: Neuromatch Academy (Computational Neuroscience Track) · Google Summer of Code
+      year: 2023
+
+    - title: Co-organizer
+      institution: SBI Workshop 2022 · SBI Hackathon 2024 & 2025
+      year: since 2022
