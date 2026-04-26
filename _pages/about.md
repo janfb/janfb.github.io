@@ -32,7 +32,7 @@ NumFOCUS-affiliated Python toolkit for SBI used across neuroscience, cosmology,
 epidemiology, and beyond. My recent research extends SBI to simulators with
 mixed-type (continuous + discrete) parameters and to hierarchical Bayesian models for
 complex scientific simulators. In parallel, I work on fine-tuning vision foundation
-models for remote-sensing applications in the public sector — and, more broadly, on
+models for remote-sensing applications in the public sector, and, more broadly, on
 sovereign AI for public-sector, non-profit, and civil-society applications.
 
 #### Research interests
