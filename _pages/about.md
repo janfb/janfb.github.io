@@ -39,7 +39,7 @@ sovereign AI for public-sector, non-profit, and civil-society applications.
 
 - Simulation-based inference and neural density estimation
 - Probabilistic programming for hierarchical models
-- Bayesian inference for scientific simulators (neuroscience, connectomics, decision-making)
+- Bayesian inference for scientific simulators
 - Open-source ML tooling and reproducible research
 
 #### Elsewhere
