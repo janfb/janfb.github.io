@@ -1,0 +1,86 @@
+/*****************************
+ * Teachings/Courses styles
+ *****************************/
+
+.courses {
+  margin-top: 30px;
+}
+
+.year {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 10px;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.course-item {
+  // Plain flow — no card chrome
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.course-title {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+.course-meta {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.course-term,
+.course-instructor {
+  margin-right: 0;
+
+  & + & {
+    &::before {
+      content: " · ";
+      font-style: normal;
+      margin: 0 0.25rem;
+    }
+  }
+}
+
+.course-description {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+
+  p {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.course-info {
+  margin-bottom: 30px;
+}
+
+.course-schedule {
+  margin-bottom: 30px;
+}
+
+.schedule-description {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.schedule-materials {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
